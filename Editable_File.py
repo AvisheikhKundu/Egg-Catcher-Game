@@ -7,6 +7,7 @@ canvas_height = 400
 #root = Tk()
 
 
+
 root = Tk()
 root.title("AVISHEIKH")
 c = Canvas(root, width=canvas_width, height=canvas_height, background="light sky blue")
