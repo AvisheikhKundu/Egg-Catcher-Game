@@ -53,7 +53,7 @@ game_font.config(size=18)
 score = 0
 score_text = c.create_text(10, 10, anchor="nw", font=game_font, fill="darkblue", text="Score: "+ str(score))
 
-lives_remaining = 3
+lives_remaining = 5
 lives_text = c.create_text(canvas_width-10, 10, anchor="ne", font=game_font, fill="darkblue", text="Lives: "+ str(lives_remaining))
 
 eggs = []
@@ -64,6 +64,7 @@ def create_egg():
     new_egg = c.create_oval(x, y, x+egg_width, y+egg_height, fill=next(color_cycle), width=0)
     eggs.append(new_egg)
     root.after(egg_interval, create_egg)
+
 
 def move_eggs():
     for egg in eggs:
@@ -96,6 +97,7 @@ def check_catch():
             increase_score(egg_score)
     root.after(100, check_catch)
 
+
 def increase_score(points):
     global score, egg_speed, egg_interval
     score += points
@@ -103,10 +105,12 @@ def increase_score(points):
     egg_interval = int(egg_interval * difficulty)
     c.itemconfigure(score_text, text="Score: "+ str(score))
 
+
 def move_left(event):
     (x1, y1, x2, y2) = c.coords(catcher)
     if x1 > 0:
         c.move(catcher, -20, 0)
+
 
 def move_right(event):
     (x1, y1, x2, y2) = c.coords(catcher)
