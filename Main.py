@@ -1,12 +1,13 @@
 
 
 #This is a simple game where you have to catch the eggs falling from the sky.
-#You can move the catcher left and right using the arrow keys. 
+You can move the catcher left and right using the arrow keys. 
 #If you miss an egg, you lose a life. If you lose all your lives, the game is over.
 #The game keeps track of your score and the number of lives you have remaining. 
 #The game gets harder as you catch more eggs, as the eggs fall faster and faster. 
 #The game ends when you run out of lives. You can change the difficulty of the game by changing the value of the difficulty variable. 
 #The game is created using the tkinter library in Python. 
+
 #The game is created by Avisheikh Kundu.
 
 
