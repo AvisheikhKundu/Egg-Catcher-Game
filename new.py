@@ -1,14 +1,15 @@
-print(69)
-"""from itertools import cycle
+from itertools import cycle
 from random import randrange
 from tkinter import Canvas, Tk, messagebox, font
-
 canvas_width = 800
 canvas_height = 400
+
+#root = Tk()
 
 
 
 root = Tk()
+root.title("AVISHEIKH")
 c = Canvas(root, width=canvas_width, height=canvas_height, background="light sky blue")
 c.create_rectangle(-5, canvas_height-100, canvas_width+5, canvas_height+5, fill="white", width=0)
 c.create_oval(-80, -80, 120, 120, fill='orange', width=0)
@@ -106,4 +107,4 @@ c.focus_set()
 root.after(1000, create_egg)
 root.after(1000, move_eggs)
 root.after(1000, check_catch)
-root.mainloop()"""
+root.mainloop()
