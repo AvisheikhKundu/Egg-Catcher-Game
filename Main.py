@@ -1,3 +1,7 @@
+#This game is created by Avisheikh Kundu
+
+#follow me on GitHub -- https://github.com/AvisheikhKundu
+
 from itertools import cycle
 from random import randrange
 from tkinter import Canvas, Tk, messagebox, font
