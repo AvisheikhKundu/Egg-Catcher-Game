@@ -8,7 +8,9 @@
 #The game ends when you run out of lives. You can change the difficulty of the game by changing the value of the difficulty variable. 
 #The game is created using the tkinter library in Python. 
 
+
 #The game is created by Avisheikh Kundu.
+
 
 
 from itertools import cycle
