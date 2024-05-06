@@ -76,6 +76,7 @@ def move_eggs():
             egg_dropped(egg)
     root.after(egg_speed, move_eggs)
 
+
 def egg_dropped(egg):
     eggs.remove(egg)
     c.delete(egg)
